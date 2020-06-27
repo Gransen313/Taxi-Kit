@@ -14,6 +14,10 @@
 		9B7960AB24874BC800CB3AB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7960AA24874BC800CB3AB7 /* Assets.xcassets */; };
 		9B7960AE24874BC800CB3AB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7960AC24874BC800CB3AB7 /* LaunchScreen.storyboard */; };
 		9B7960B82488D0F600CB3AB7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7960B72488D0F600CB3AB7 /* SignInViewController.swift */; };
+		9B7C5ED824A4631800418A93 /* SignUpViewControllerAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C5ED724A4631800418A93 /* SignUpViewControllerAutoLayout.swift */; };
+		9B7C5EFA24A4AF6D00418A93 /* Inter-Bold-slnt=0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B7C5EF824A4AF6D00418A93 /* Inter-Bold-slnt=0.ttf */; };
+		9B7C5EFB24A4AF6D00418A93 /* Inter-Regular-slnt=0.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B7C5EF924A4AF6D00418A93 /* Inter-Regular-slnt=0.ttf */; };
+		9B7C5EFD24A651F400418A93 /* SignInViewControllerAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7C5EFC24A651F400418A93 /* SignInViewControllerAutoLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		9B7960AD24874BC800CB3AB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B7960AF24874BC800CB3AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B7960B72488D0F600CB3AB7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		9B7C5ED724A4631800418A93 /* SignUpViewControllerAutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerAutoLayout.swift; sourceTree = "<group>"; };
+		9B7C5EF824A4AF6D00418A93 /* Inter-Bold-slnt=0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold-slnt=0.ttf"; sourceTree = "<group>"; };
+		9B7C5EF924A4AF6D00418A93 /* Inter-Regular-slnt=0.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular-slnt=0.ttf"; sourceTree = "<group>"; };
+		9B7C5EFC24A651F400418A93 /* SignInViewControllerAutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewControllerAutoLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,8 @@
 			children = (
 				9B7960A024874BC200CB3AB7 /* Taxi Kit */,
 				9B79609F24874BC200CB3AB7 /* Products */,
+				9B7C5EF824A4AF6D00418A93 /* Inter-Bold-slnt=0.ttf */,
+				9B7C5EF924A4AF6D00418A93 /* Inter-Regular-slnt=0.ttf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +84,8 @@
 			children = (
 				9B7960A524874BC200CB3AB7 /* SignUpViewController.swift */,
 				9B7960B72488D0F600CB3AB7 /* SignInViewController.swift */,
+				9B7C5ED724A4631800418A93 /* SignUpViewControllerAutoLayout.swift */,
+				9B7C5EFC24A651F400418A93 /* SignInViewControllerAutoLayout.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -147,6 +159,8 @@
 				9B7960AE24874BC800CB3AB7 /* LaunchScreen.storyboard in Resources */,
 				9B7960AB24874BC800CB3AB7 /* Assets.xcassets in Resources */,
 				9B7960A924874BC200CB3AB7 /* Main.storyboard in Resources */,
+				9B7C5EFB24A4AF6D00418A93 /* Inter-Regular-slnt=0.ttf in Resources */,
+				9B7C5EFA24A4AF6D00418A93 /* Inter-Bold-slnt=0.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,8 +173,10 @@
 			files = (
 				9B7960B82488D0F600CB3AB7 /* SignInViewController.swift in Sources */,
 				9B7960A624874BC200CB3AB7 /* SignUpViewController.swift in Sources */,
+				9B7C5ED824A4631800418A93 /* SignUpViewControllerAutoLayout.swift in Sources */,
 				9B7960A224874BC200CB3AB7 /* AppDelegate.swift in Sources */,
 				9B7960A424874BC200CB3AB7 /* SceneDelegate.swift in Sources */,
+				9B7C5EFD24A651F400418A93 /* SignInViewControllerAutoLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
