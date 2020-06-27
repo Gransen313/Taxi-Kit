@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // !!!Made by me!!! Set SignUpViewControllerAutoLayout as a root for scene.
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        window?.rootViewController = SignUpViewControllerAutoLayout()
+        
         return true
     }
     

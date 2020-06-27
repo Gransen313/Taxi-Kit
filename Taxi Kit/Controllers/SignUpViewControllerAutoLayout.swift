@@ -310,10 +310,20 @@ class SignUpViewControllerAutoLayout: UIViewController {
     
     // Function to move to Sign in screen.
     @objc private func switchToSignInViewController() {
+        clearTextFields()
+        
         let signInViewControllerAutoLayout = SignInViewControllerAutoLayout()
         signInViewControllerAutoLayout.modalPresentationStyle = .fullScreen
         
         present(signInViewControllerAutoLayout, animated: true, completion: nil)
+    }
+    
+    //Clear textfields when move from Sign Up screen.
+    private func clearTextFields() {
+        
+        nameTextField.text = ""
+        emailTextField.text = ""
+        passwordTextField.text = ""
     }
     
     // Setup some constraints for stack that allows to switch to Sign in screen.
