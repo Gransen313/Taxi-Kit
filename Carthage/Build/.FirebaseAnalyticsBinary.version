@@ -1,0 +1,74 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "6.27.0",
+  "iOS" : [
+    {
+      "name" : "Firebase",
+      "hash" : "a8669248da9519e9955e00448e518e1ca6becb32689eedddde237e19ad1136ae",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "FIRAnalyticsConnector",
+      "hash" : "87e519276d7ef0915170a183d8fe794e33d27b27103f905144386114d5aab5ba",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "nanopb",
+      "hash" : "b7487d72a8e126a0dbbec5cf868690010ae36d3e09515fe6c1f1ce46f4368d1a",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "GoogleDataTransportCCTSupport",
+      "hash" : "0036564fc358bd5d94cea7d7cbd06d11e9fb56fce6ca2a0713454439743ab07b",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "FirebaseCore",
+      "hash" : "0d65d5f0fecc868c4de073e0ce7e27b85f9b7455258881a46be2a289f3bf8302",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "FirebaseCoreDiagnostics",
+      "hash" : "a8aefe148f8ce4bac7e7bd3c96c6085174d928443a632e6da0cd7f1afe41137c",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "FirebaseAnalytics",
+      "hash" : "5c05cf5a60f6dbbb1eb493dc74cc6a0e233c4ad56f15aeb2717f4aed1e7b6613",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "GoogleDataTransport",
+      "hash" : "bdbdfb7d8644988d6c0149983d300158aa7af3e0fa712c1ddb038fb161030380",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "FirebaseInstallations",
+      "hash" : "21247b7b7b3902394bceb51f13b462a2e76264c2e798685b55569ff5ad028d2e",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "PromisesObjC",
+      "hash" : "e52283fe5e1add45f871293530497c108e3e19ba6d7733d366a34dedee9c0016",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "GoogleUtilities",
+      "hash" : "5bfd8301ed908e6c2c14b38feca46fc28d6ffac876c319391482940b78e3872c",
+      "linking" : "dynamic"
+    },
+    {
+      "name" : "GoogleAppMeasurement",
+      "hash" : "38faae5941ec8d0b71909a76025b0a2d3774ee9dec15b8d47945365d37758370",
+      "linking" : "dynamic"
+    }
+  ]
+}
