@@ -36,6 +36,16 @@ class SignUpViewController: UIViewController {
         view.addGestureRecognizer(tap)
     }
     
+    //Switch to VerifyCodeViewController.
+    @IBAction func singUpButtonPressed(_ sender: UIButton) {
+        
+        clearTextFields()
+        
+        let storyboard = UIStoryboard(name: "VerifyCode", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "VerifyCodeVC") as UIViewController
+        present(vc, animated: true, completion: nil)
+    }
+    
     //Make password text visible and hidden when visible button is pressed
     @IBAction func visibleButtonPressed(_ sender: UIButton) {
         
@@ -58,7 +68,11 @@ class SignUpViewController: UIViewController {
         
         clearTextFields()
         
-        performSegue(withIdentifier: "signUpToSignIn", sender: sender)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "SignInVC") as UIViewController
+        present(vc, animated: true, completion: nil)
+        
+//        performSegue(withIdentifier: "signUpToSignIn", sender: sender)
     }
     
     //Auxillary function for hide keyboard when tap outside textfield.

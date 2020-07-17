@@ -52,10 +52,20 @@ class SignInViewController: UIViewController {
         passwordIsHidden = !passwordIsHidden
     }
     
-    //Dismiss SignInViewController when sign up button is pressed.
+    //Dismiss SignInViewController when sign up button is pressed. SignUpVC
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
         
-        navigationController?.popToRootViewController(animated: true)
+        dismiss(animated: true, completion: nil)
+        
+//        navigationController?.popToRootViewController(animated: true)
+    }
+    
+    //Move to VerifyCodeViewController.
+    @IBAction func signInButtonPressed(_ sender: UIButton) {
+        
+        let storyboard = UIStoryboard(name: "VerifyCode", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "VerifyCodeVC") as UIViewController
+        present(vc, animated: true, completion: nil)
     }
     
     //Auxillary function for hide keyboard when tap outside textfield.
