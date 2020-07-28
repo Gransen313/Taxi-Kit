@@ -28,6 +28,8 @@ class VerifyCodeViewController: UIViewController {
         getCallButton.isEnabled = false
         
         // Do any additional setup after loading the view.
+        
+        setColorForResendCodeButton()
     }
     
     //Dismiss VerifyCodeViewController.
@@ -44,7 +46,6 @@ class VerifyCodeViewController: UIViewController {
             print(text)
             changeButtonText(with: text)
         }
-        
     }
     
     @IBAction func getCallButtonPressed(_ sender: UIButton) {
@@ -76,6 +77,14 @@ class VerifyCodeViewController: UIViewController {
         }
     }
     
+    //Set color and underline style for resendCodeButton.
+    private func setColorForResendCodeButton() {
+        let attributes = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue,
+                          NSAttributedString.Key.foregroundColor: UIColor(named: "Grey 2") as Any]
+        let attributedString = NSMutableAttributedString(string: "Resend code", attributes: attributes)
+        resendCodeButton.setAttributedTitle(attributedString, for: .normal)
+    }
+    
     private func setNumber(with number: String) {
         
         if firstNumberLabel.text == "" {
@@ -92,6 +101,9 @@ class VerifyCodeViewController: UIViewController {
     private func changeButtonText(with text: String) {
         
         if text == "Resend code" {
+            
+            resendCodeButton.isEnabled = false
+            
             startTimer()
         }
     }
@@ -105,13 +117,13 @@ class VerifyCodeViewController: UIViewController {
         //example functionality
         if counter >= 0 {
             
-            let attributes = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue]
+            let attributes = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue,
+                              NSAttributedString.Key.foregroundColor: UIColor(named: "Deep Blue") as Any]
             let attributedString = NSMutableAttributedString(string: "Resend code ( 0:\(counter) )", attributes: attributes)
             resendCodeButton.setAttributedTitle(attributedString, for: .normal)
             
-            
             counter -= 1
-        } else if counter < 0 {
+        } else if counter < 1 {
             
             let attributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "Grey 2")]
             let attributedString = NSMutableAttributedString(string: "The SMS with the code didn’t arrive?", attributes: attributes as [NSAttributedString.Key : Any])
@@ -119,6 +131,8 @@ class VerifyCodeViewController: UIViewController {
             
             getCallButton.isHidden = false
             getCallButton.isEnabled = true
+            
+            resendCodeButton.isEnabled = false
         }
     }
 }

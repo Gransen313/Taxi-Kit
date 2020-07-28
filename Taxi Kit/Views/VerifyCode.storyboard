@@ -142,6 +142,7 @@
                                     <constraint firstAttribute="width" constant="328" id="Qt6-IP-9cV"/>
                                     <constraint firstAttribute="height" constant="17" id="kHS-eR-aJg"/>
                                 </constraints>
+                                <color key="tintColor" name="Grey 2"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Resend code">
