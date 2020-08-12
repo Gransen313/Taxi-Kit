@@ -60,11 +60,11 @@ class SignInViewController: UIViewController {
 //        navigationController?.popToRootViewController(animated: true)
     }
     
-    //Move to VerifyCodeViewController.
+    //Move to MapViewController.
     @IBAction func signInButtonPressed(_ sender: UIButton) {
         
-        let storyboard = UIStoryboard(name: "VerifyCode", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "VerifyCodeVC") as UIViewController
+        let storyboard = UIStoryboard(name: "Map", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "MapVC") as UIViewController
         present(vc, animated: true, completion: nil)
     }
     
