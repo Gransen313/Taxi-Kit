@@ -138,6 +138,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Frs-6H-jO2">
                                 <rect key="frame" x="23.666666666666657" y="355" width="328" height="17"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="328" id="Qt6-IP-9cV"/>
                                     <constraint firstAttribute="height" constant="17" id="kHS-eR-aJg"/>
@@ -159,6 +160,17 @@
                                     <action selector="resendCodeButtonPressed:" destination="reb-hC-5oZ" eventType="touchUpInside" id="aGw-3R-nCS"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q59-Vy-CNK" userLabel="Count Label">
+                                <rect key="frame" x="225" y="355" width="15.333333333333343" height="17"/>
+                                <color key="tintColor" name="Black"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="5S8-IM-xv2"/>
+                                    <constraint firstAttribute="width" constant="15.33" id="vBB-NE-1ya"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                                <color key="textColor" name="Deep Blue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tn5-gT-WoG" userLabel="Key Board View">
                                 <rect key="frame" x="0.0" y="533" width="375" height="279"/>
                                 <subviews>
@@ -388,11 +400,13 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="tCx-Yh-5zU" secondAttribute="trailing" id="239-ij-ePy"/>
                             <constraint firstItem="aEu-De-SeA" firstAttribute="top" secondItem="Vzv-hS-HiW" secondAttribute="top" constant="20" id="ANl-rE-adJ"/>
+                            <constraint firstItem="q59-Vy-CNK" firstAttribute="centerX" secondItem="Vzv-hS-HiW" secondAttribute="centerX" constant="45" id="AeT-tD-OzA"/>
                             <constraint firstItem="tn5-gT-WoG" firstAttribute="leading" secondItem="Vzv-hS-HiW" secondAttribute="leading" id="HuE-3a-mxA"/>
                             <constraint firstAttribute="trailing" secondItem="tn5-gT-WoG" secondAttribute="trailing" id="Jxd-zj-9vn"/>
                             <constraint firstItem="g1h-MR-5Ya" firstAttribute="centerX" secondItem="Vzv-hS-HiW" secondAttribute="centerX" id="Mxp-ll-It0"/>
                             <constraint firstItem="Frs-6H-jO2" firstAttribute="centerX" secondItem="Vzv-hS-HiW" secondAttribute="centerX" id="Pzg-XU-ptf"/>
                             <constraint firstItem="Frs-6H-jO2" firstAttribute="top" secondItem="tkI-cx-vwO" secondAttribute="bottom" constant="20" id="STM-dd-PNJ"/>
+                            <constraint firstItem="q59-Vy-CNK" firstAttribute="top" secondItem="tkI-cx-vwO" secondAttribute="bottom" constant="20" id="Vle-Nw-iW0"/>
                             <constraint firstItem="tCx-Yh-5zU" firstAttribute="leading" secondItem="Vzv-hS-HiW" secondAttribute="leading" id="YiX-PH-iYm"/>
                             <constraint firstItem="aEu-De-SeA" firstAttribute="leading" secondItem="Vzv-hS-HiW" secondAttribute="leading" constant="15" id="ZBH-Z9-3Zu"/>
                             <constraint firstItem="tn5-gT-WoG" firstAttribute="top" secondItem="tCx-Yh-5zU" secondAttribute="bottom" id="eJN-Gl-YcB"/>
@@ -406,6 +420,7 @@
                         <viewLayoutGuide key="safeArea" id="cBy-v0-8Bv"/>
                     </view>
                     <connections>
+                        <outlet property="countLabel" destination="q59-Vy-CNK" id="hwy-Rt-CXT"/>
                         <outlet property="firstNumberLabel" destination="ZOK-bw-v7c" id="OP9-0H-pbE"/>
                         <outlet property="forthNumberLabel" destination="xxj-qu-DIS" id="lFx-tk-OfG"/>
                         <outlet property="getCallButton" destination="tCx-Yh-5zU" id="5dD-q0-oQk"/>
