@@ -12,14 +12,11 @@
         <!--User Menu View Controller-->
         <scene sceneID="pQX-qB-NAc">
             <objects>
-                <viewController storyboardIdentifier="ToUserMenu" id="4q7-Il-VdY" customClass="UserMenuViewController" customModule="Taxi_Kit" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Uh8-fY-J1U">
+                <viewController storyboardIdentifier="ToUserMenu" modalPresentationStyle="overCurrentContext" id="4q7-Il-VdY" customClass="UserMenuViewController" customModule="Taxi_Kit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="Uh8-fY-J1U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="3gS-fl-UXc">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLV-HL-iYc" userLabel="Top View">
                                 <rect key="frame" x="0.0" y="0.0" width="312" height="260"/>
                                 <subviews>
@@ -91,25 +88,22 @@
                                     <constraint firstAttribute="bottom" secondItem="XvX-jg-tPr" secondAttribute="bottom" constant="69" id="zcx-FJ-JnU"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJG-RZ-auo" userLabel="Close Menu Button">
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJG-RZ-auo" userLabel="Close Menu Button">
                                 <rect key="frame" x="312" y="0.0" width="102" height="896"/>
+                                <color key="backgroundColor" name="Black"/>
                                 <connections>
                                     <action selector="closeMenuPressed:" destination="4q7-Il-VdY" eventType="touchUpInside" id="coI-hZ-NmF"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="RJG-RZ-auo" secondAttribute="bottom" id="8uY-H3-QOm"/>
                             <constraint firstAttribute="bottom" secondItem="d8u-ca-MBn" secondAttribute="bottom" id="CcI-A0-wfe"/>
-                            <constraint firstAttribute="bottom" secondItem="3gS-fl-UXc" secondAttribute="bottom" id="FI5-n8-9m6"/>
                             <constraint firstItem="RJG-RZ-auo" firstAttribute="leading" secondItem="d8u-ca-MBn" secondAttribute="trailing" id="NKT-0W-kei"/>
-                            <constraint firstItem="3gS-fl-UXc" firstAttribute="top" secondItem="Uh8-fY-J1U" secondAttribute="top" id="XzI-1z-7iW"/>
                             <constraint firstItem="d8u-ca-MBn" firstAttribute="top" secondItem="TLV-HL-iYc" secondAttribute="bottom" id="aAW-LI-cgn"/>
                             <constraint firstItem="TLV-HL-iYc" firstAttribute="top" secondItem="Uh8-fY-J1U" secondAttribute="top" id="cMV-PQ-fBp"/>
-                            <constraint firstItem="3gS-fl-UXc" firstAttribute="leading" secondItem="Uh8-fY-J1U" secondAttribute="leading" id="clG-fS-oE5"/>
                             <constraint firstItem="TLV-HL-iYc" firstAttribute="leading" secondItem="Uh8-fY-J1U" secondAttribute="leading" id="gAR-Du-94H"/>
-                            <constraint firstAttribute="trailing" secondItem="3gS-fl-UXc" secondAttribute="trailing" id="rAI-CW-suw"/>
                             <constraint firstItem="d8u-ca-MBn" firstAttribute="leading" secondItem="Uh8-fY-J1U" secondAttribute="leading" id="tWm-rb-Jjs"/>
                             <constraint firstItem="RJG-RZ-auo" firstAttribute="top" secondItem="Uh8-fY-J1U" secondAttribute="top" id="xmL-wV-kr8"/>
                             <constraint firstAttribute="trailing" secondItem="RJG-RZ-auo" secondAttribute="trailing" id="y7T-Ni-EAV"/>
@@ -128,8 +122,10 @@
     <resources>
         <image name="ic_edit" width="54" height="54"/>
         <image name="list" width="242" height="218"/>
-        <image name="map" width="375" height="812"/>
         <image name="section 1" width="312" height="260"/>
+        <namedColor name="Black">
+            <color red="0.24300000071525574" green="0.28600001335144043" blue="0.3449999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Deep Blue">
             <color red="0.067000001668930054" green="0.32199999690055847" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
