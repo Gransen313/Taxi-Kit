@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Profile View Controller-->
+        <scene sceneID="yaT-jK-S0I">
+            <objects>
+                <viewController storyboardIdentifier="ToUserProfile" id="Z5l-P1-rlR" customClass="UserProfileViewController" customModule="Taxi_Kit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="26v-Zk-Ceq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="862-R8-tbD">
+                                <rect key="frame" x="192" y="22" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2OZ-ze-t3c"/>
+                                    <constraint firstAttribute="width" constant="30" id="xZI-ug-WnL"/>
+                                </constraints>
+                                <state key="normal" image="ic_gesture"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info" translatesAutoresizingMaskIntoConstraints="NO" id="h9y-5q-9Ev">
+                                <rect key="frame" x="114.5" y="104" width="185" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="77T-62-0b9"/>
+                                    <constraint firstAttribute="width" constant="185" id="Q04-1w-YjP"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="options" translatesAutoresizingMaskIntoConstraints="NO" id="JGq-3D-TEp">
+                                <rect key="frame" x="41.5" y="323" width="331" height="306"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="306" id="7XA-Kk-BSs"/>
+                                    <constraint firstAttribute="width" constant="331" id="g8M-X6-PmA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcs-bG-3qT" userLabel="Close Profile Button">
+                                <rect key="frame" x="142" y="758" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Eyz-oT-sle"/>
+                                    <constraint firstAttribute="width" constant="130" id="xyI-eK-uND"/>
+                                </constraints>
+                                <state key="normal" image="btn_cancel"/>
+                                <connections>
+                                    <action selector="closeProfileButtonPressed:" destination="Z5l-P1-rlR" eventType="touchUpInside" id="gZa-vG-j3N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vcs-bG-3qT" firstAttribute="centerX" secondItem="26v-Zk-Ceq" secondAttribute="centerX" id="5xx-JN-qmy"/>
+                            <constraint firstItem="JGq-3D-TEp" firstAttribute="centerX" secondItem="26v-Zk-Ceq" secondAttribute="centerX" id="6ft-3b-0TH"/>
+                            <constraint firstItem="862-R8-tbD" firstAttribute="top" secondItem="26v-Zk-Ceq" secondAttribute="top" constant="22" id="Cma-9J-skR"/>
+                            <constraint firstItem="JGq-3D-TEp" firstAttribute="top" secondItem="26v-Zk-Ceq" secondAttribute="top" constant="323" id="Pk7-TX-hSV"/>
+                            <constraint firstItem="h9y-5q-9Ev" firstAttribute="top" secondItem="26v-Zk-Ceq" secondAttribute="top" constant="104" id="YB7-Rb-S5j"/>
+                            <constraint firstItem="h9y-5q-9Ev" firstAttribute="centerX" secondItem="26v-Zk-Ceq" secondAttribute="centerX" id="cQF-Z7-Sty"/>
+                            <constraint firstItem="862-R8-tbD" firstAttribute="centerX" secondItem="26v-Zk-Ceq" secondAttribute="centerX" id="fzm-cf-tK8"/>
+                            <constraint firstAttribute="bottom" secondItem="vcs-bG-3qT" secondAttribute="bottom" constant="8" id="jUg-FR-pae"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XDm-1X-qzc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FV7-NB-GGU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="38" y="26"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_cancel" width="95" height="95"/>
+        <image name="ic_gesture" width="30" height="30"/>
+        <image name="info" width="184" height="166"/>
+        <image name="options" width="353" height="328"/>
+    </resources>
+</document>

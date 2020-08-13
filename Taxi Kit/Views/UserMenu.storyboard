@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Menu View Controller-->
+        <scene sceneID="pQX-qB-NAc">
+            <objects>
+                <viewController storyboardIdentifier="ToUserMenu" id="4q7-Il-VdY" customClass="UserMenuViewController" customModule="Taxi_Kit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uh8-fY-J1U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="3gS-fl-UXc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLV-HL-iYc" userLabel="Top View">
+                                <rect key="frame" x="0.0" y="0.0" width="312" height="260"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="section 1" translatesAutoresizingMaskIntoConstraints="NO" id="fQL-up-7Ez">
+                                        <rect key="frame" x="0.0" y="0.0" width="312" height="260"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfV-bA-y2G" userLabel="Edit Button">
+                                        <rect key="frame" x="105" y="68" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="2fB-43-GsF"/>
+                                            <constraint firstAttribute="width" constant="60" id="oke-OA-IGw"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_edit"/>
+                                        <connections>
+                                            <action selector="editButtonPressed:" destination="4q7-Il-VdY" eventType="touchUpInside" id="Gti-JK-kK7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="Deep Blue"/>
+                                <constraints>
+                                    <constraint firstItem="fQL-up-7Ez" firstAttribute="leading" secondItem="TLV-HL-iYc" secondAttribute="leading" id="6Xf-fh-dNh"/>
+                                    <constraint firstAttribute="height" constant="260" id="BD3-by-63L"/>
+                                    <constraint firstItem="gfV-bA-y2G" firstAttribute="leading" secondItem="TLV-HL-iYc" secondAttribute="leading" constant="105" id="BvX-bZ-ayg"/>
+                                    <constraint firstAttribute="bottom" secondItem="fQL-up-7Ez" secondAttribute="bottom" id="Jmi-rT-Jot"/>
+                                    <constraint firstItem="gfV-bA-y2G" firstAttribute="top" secondItem="TLV-HL-iYc" secondAttribute="top" constant="68" id="RPI-VE-lTR"/>
+                                    <constraint firstAttribute="trailing" secondItem="fQL-up-7Ez" secondAttribute="trailing" id="awI-bb-N02"/>
+                                    <constraint firstItem="fQL-up-7Ez" firstAttribute="top" secondItem="TLV-HL-iYc" secondAttribute="top" id="knd-fn-EUF"/>
+                                    <constraint firstAttribute="width" constant="312" id="r1M-RU-niB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8u-ca-MBn" userLabel="Bottom View">
+                                <rect key="frame" x="0.0" y="260" width="312" height="636"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XvX-jg-tPr">
+                                        <rect key="frame" x="52" y="547" width="186" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="186" id="Wem-bQ-SYE"/>
+                                            <constraint firstAttribute="height" constant="20" id="qFR-3Q-Lf8"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Sign out">
+                                                    <attributes>
+                                                        <font key="NSFont" size="15" name="Inter-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        <integer key="NSUnderline" value="1"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="signOutPressed:" destination="4q7-Il-VdY" eventType="touchUpInside" id="tr5-z6-Izn"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list" translatesAutoresizingMaskIntoConstraints="NO" id="ct8-nU-ySB">
+                                        <rect key="frame" x="51" y="79" width="232" height="218"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="218" id="Wl8-Cp-QyY"/>
+                                            <constraint firstAttribute="width" constant="232" id="eJX-eE-qjS"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="312" id="HAM-PW-ZKL"/>
+                                    <constraint firstItem="XvX-jg-tPr" firstAttribute="leading" secondItem="d8u-ca-MBn" secondAttribute="leading" constant="52" id="PiE-Dj-Bae"/>
+                                    <constraint firstItem="ct8-nU-ySB" firstAttribute="top" secondItem="d8u-ca-MBn" secondAttribute="top" constant="79" id="SXa-Cl-aXe"/>
+                                    <constraint firstItem="ct8-nU-ySB" firstAttribute="leading" secondItem="d8u-ca-MBn" secondAttribute="leading" constant="51" id="XIU-A2-u1n"/>
+                                    <constraint firstAttribute="bottom" secondItem="XvX-jg-tPr" secondAttribute="bottom" constant="69" id="zcx-FJ-JnU"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJG-RZ-auo" userLabel="Close Menu Button">
+                                <rect key="frame" x="312" y="0.0" width="102" height="896"/>
+                                <connections>
+                                    <action selector="closeMenuPressed:" destination="4q7-Il-VdY" eventType="touchUpInside" id="coI-hZ-NmF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="RJG-RZ-auo" secondAttribute="bottom" id="8uY-H3-QOm"/>
+                            <constraint firstAttribute="bottom" secondItem="d8u-ca-MBn" secondAttribute="bottom" id="CcI-A0-wfe"/>
+                            <constraint firstAttribute="bottom" secondItem="3gS-fl-UXc" secondAttribute="bottom" id="FI5-n8-9m6"/>
+                            <constraint firstItem="RJG-RZ-auo" firstAttribute="leading" secondItem="d8u-ca-MBn" secondAttribute="trailing" id="NKT-0W-kei"/>
+                            <constraint firstItem="3gS-fl-UXc" firstAttribute="top" secondItem="Uh8-fY-J1U" secondAttribute="top" id="XzI-1z-7iW"/>
+                            <constraint firstItem="d8u-ca-MBn" firstAttribute="top" secondItem="TLV-HL-iYc" secondAttribute="bottom" id="aAW-LI-cgn"/>
+                            <constraint firstItem="TLV-HL-iYc" firstAttribute="top" secondItem="Uh8-fY-J1U" secondAttribute="top" id="cMV-PQ-fBp"/>
+                            <constraint firstItem="3gS-fl-UXc" firstAttribute="leading" secondItem="Uh8-fY-J1U" secondAttribute="leading" id="clG-fS-oE5"/>
+                            <constraint firstItem="TLV-HL-iYc" firstAttribute="leading" secondItem="Uh8-fY-J1U" secondAttribute="leading" id="gAR-Du-94H"/>
+                            <constraint firstAttribute="trailing" secondItem="3gS-fl-UXc" secondAttribute="trailing" id="rAI-CW-suw"/>
+                            <constraint firstItem="d8u-ca-MBn" firstAttribute="leading" secondItem="Uh8-fY-J1U" secondAttribute="leading" id="tWm-rb-Jjs"/>
+                            <constraint firstItem="RJG-RZ-auo" firstAttribute="top" secondItem="Uh8-fY-J1U" secondAttribute="top" id="xmL-wV-kr8"/>
+                            <constraint firstAttribute="trailing" secondItem="RJG-RZ-auo" secondAttribute="trailing" id="y7T-Ni-EAV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n6q-2C-yyX"/>
+                    </view>
+                    <connections>
+                        <outlet property="signOutButton" destination="XvX-jg-tPr" id="GMy-ad-wYE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uPh-oU-eay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52.173913043478265" y="-77.008928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_edit" width="54" height="54"/>
+        <image name="list" width="242" height="218"/>
+        <image name="map" width="375" height="812"/>
+        <image name="section 1" width="312" height="260"/>
+        <namedColor name="Deep Blue">
+            <color red="0.067000001668930054" green="0.32199999690055847" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

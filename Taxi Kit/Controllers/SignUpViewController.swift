@@ -71,8 +71,6 @@ class SignUpViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "SignInVC") as UIViewController
         present(vc, animated: true, completion: nil)
-        
-//        performSegue(withIdentifier: "signUpToSignIn", sender: sender)
     }
     
     //Auxillary function for hide keyboard when tap outside textfield.

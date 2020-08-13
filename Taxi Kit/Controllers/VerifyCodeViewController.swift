@@ -29,8 +29,6 @@ class VerifyCodeViewController: UIViewController {
         getCallButton.isHidden = true
         getCallButton.isEnabled = false
         
-        // Do any additional setup after loading the view.
-        
         setColorForResendCodeButton()
         
         countLabel.alpha = 0.0
@@ -76,7 +74,6 @@ class VerifyCodeViewController: UIViewController {
     @IBAction func numberButtonPressed(_ sender: UIButton) {
         
         if let number = sender.titleLabel?.text{
-//            print(number)
             setNumber(with: number)
         }
     }
