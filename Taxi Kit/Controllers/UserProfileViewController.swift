@@ -37,7 +37,8 @@ class UserProfileViewController: UIViewController {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             
             if swipeGesture.direction == .down {
-                dismiss(animated: true, completion: nil)
+                presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+//                dismiss(animated: true, completion: nil)
             }
         }
     }

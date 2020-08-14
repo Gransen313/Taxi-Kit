@@ -23,6 +23,7 @@ class UserMenuViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "UserProfile", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "ToUserProfile") as UIViewController
+        vc.modalPresentationStyle = .fullScreen
         
         let transition = CATransition()
         transition.duration = 0.5

@@ -56,8 +56,6 @@ class SignInViewController: UIViewController {
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
         
         dismiss(animated: true, completion: nil)
-        
-//        navigationController?.popToRootViewController(animated: true)
     }
     
     //Move to MapViewController.
@@ -65,6 +63,7 @@ class SignInViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "Map", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "MapVC") as UIViewController
+        vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
     }
     

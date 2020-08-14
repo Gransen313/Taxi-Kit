@@ -528,7 +528,7 @@
                                                 <fragment content="Sign up">
                                                     <attributes>
                                                         <color key="NSColor" name="Deep Blue"/>
-                                                        <font key="NSFont" metaFont="system" size="17"/>
+                                                        <font key="NSFont" metaFont="label" size="17"/>
                                                         <integer key="NSUnderline" value="1"/>
                                                     </attributes>
                                                 </fragment>

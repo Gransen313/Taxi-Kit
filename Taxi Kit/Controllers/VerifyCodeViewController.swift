@@ -21,6 +21,7 @@ class VerifyCodeViewController: UIViewController {
     
     @IBOutlet weak var countLabel: UILabel!
     
+    //Counter for ability to ask new code.
     private var counter = 30
     
     override func viewDidLoad() {
@@ -40,12 +41,10 @@ class VerifyCodeViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    //Call changeButtonText function when resend code button pressed.
     @IBAction func resendCodeButtonPressed(_ sender: UIButton) {
-        print("resendCodeButton pressed")
-        
         
         if let text = sender.titleLabel?.text {
-            print(text)
             changeButtonText(with: text)
         }
     }
@@ -58,6 +57,7 @@ class VerifyCodeViewController: UIViewController {
         print("checkButton pressed")
     }
     
+    //Delete the last code number if delete button pressed.
     @IBAction func deleteButtonPressed(_ sender: UIButton) {
         
         if forthNumberLabel.text != "" {
@@ -71,6 +71,7 @@ class VerifyCodeViewController: UIViewController {
         }
     }
     
+    //Set a value for next number of code.
     @IBAction func numberButtonPressed(_ sender: UIButton) {
         
         if let number = sender.titleLabel?.text{
@@ -100,7 +101,7 @@ class VerifyCodeViewController: UIViewController {
         }
     }
     
-    
+    //Change label in resend code button if button pressed.
     private func changeButtonText(with text: String) {
         
         if text == "Resend code" {
@@ -122,20 +123,16 @@ class VerifyCodeViewController: UIViewController {
         _ = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
     }
 
+    //Update label while counter is working.
     @objc func updateCounter() {
-        //example functionality
+        
         if counter > 0 {
-            
             if counter >= 10 {
-                
                 resendCodeButton.isHidden = false
                 countLabel.text = "\(counter)"
-                
             } else {
-                
                 countLabel.text = "0\(counter)"
             }
-            
             countLabel.alpha = 1.0
             
         } else if counter == 0 {

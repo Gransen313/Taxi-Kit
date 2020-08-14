@@ -43,6 +43,7 @@ class SignUpViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "VerifyCode", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "VerifyCodeVC") as UIViewController
+        vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
     }
     
@@ -70,6 +71,7 @@ class SignUpViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "SignInVC") as UIViewController
+        vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
     }
     
